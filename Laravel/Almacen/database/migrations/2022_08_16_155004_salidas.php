@@ -13,14 +13,18 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('entradas', function (Blueprint $table) {
-            $table->increments(id_inventario);
-            $table->increments('id_usuario');
-            $table->integer('stock');
+        Schema::create('salidas', function (Blueprint $table) {
+            $table->increments("id");
+            $table->integer('id_usuario')->unsigned();
+            $table->integer('id_empleado')->unsigned();
+            $table->integer('id_item')->unsigned();
+            $table->double('quantity');
+           
             $table->timestamps();
 
-
-            $table->foreign('name')->references('name')->on('users');
+            $table->foreign('id_usuario')->references('id')->on('users');
+            $table->foreign('id_empleado')->references('id')->on('empleados');
+            $table->foreign('id_item')->references('id')->on('inventarios');
         });
     }
 
