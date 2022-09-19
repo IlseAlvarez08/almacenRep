@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body style="background-color:{{ $fondo }}">
-    
+<nav class="navbar navbar-light bg-light fixed-top"> 
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="{{ asset('/img/logo.png')}}" alt="" width="30" height="30" class="d-inline-block align-text-top">
+      Almacén CAM
+    </a>
+  </div>
+</nav>
 </body>
 </html>

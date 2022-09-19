@@ -11,7 +11,7 @@
 <nav class="navbar navbar-light bg-light fixed-top"> 
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="{{ asset('/img/logo.jpg')}}" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      <img src="{{ asset('/img/logo.png')}}" alt="" width="30" height="24" class="d-inline-block align-text-top">
       Almacén CAM
     </a>
   </div>
